@@ -1,0 +1,95 @@
+* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container */
+.container {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6a1b9a;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 27, 154, 0.3);
+}
+
+/* Submit Button */
+button,
+input[type="submit"] {
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: #4a148c;
+}
+
+/* Messages */
+.message {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #e1bee7;
+  color: #4a148c;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

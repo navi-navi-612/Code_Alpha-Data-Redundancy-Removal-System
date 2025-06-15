@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Entry</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Redundancy Removal</h1>
+    
+        <form method="POST" action="/submit">
+            <input type="text" name="name" placeholder="Enter name" required>
+            <input type="email" name="email" placeholder="Enter email" required>
+            <textarea name="description" placeholder="Description" rows="4"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
